@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tile mbtiles-extract</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+    <script src='https://unpkg.com/mapbox-gl@0.47.0/dist/mapbox-gl.js'></script>
+    <link rel="stylesheet" href='//unpkg.com/mapbox-gl@0.47.0/dist/mapbox-gl.css'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+  //使用注册Mapbox时候后台自动生成的token
+//  mapboxgl.accessToken = 'your token';
+  var map = new mapboxgl.Map({
+    container: 'map', // 放置的div的id
+    style: './style.json', // mapbox style样式 mapbox://styles/mapbox/streets-v9
+    zoom: 13,
+    center: [114.05596119898604, 22.532226686716587],
+    pitch: 45,
+    bearing: -20,
+    hash: true
+  });
+
+</script>
+</body>
+</html>

@@ -12,7 +12,8 @@
 npm i
 npm start
 ```
-**打开链接:** http://localhost:7777/
+
+启动之后打开链接: http://localhost:7777/
 
 ## 切片访问方式
 
